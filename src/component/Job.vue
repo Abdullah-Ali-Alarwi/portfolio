@@ -5,7 +5,7 @@
     <h1 class="text-cyan-200  text-2xl font-bold">{{ title }} </h1>
     <span class="text-[#7f8686] font-bold">{{ place }}</span>
     <p>{{ content }}</p>
-    <p class="text-cyan-300">From <strong class="font-bold text-[white] ">{{ startDate }}</strong> to <strong class="font-bold text-[white]">{{endDate}}</strong></p>
+    <p class="text-cyan-300">{{ $t("from") }} <strong class="font-bold text-[white] ">{{ startDate }}</strong> {{ $t("to") }} <strong class="font-bold text-[white]">{{endDate}}</strong></p>
   </div>
 
 </main>

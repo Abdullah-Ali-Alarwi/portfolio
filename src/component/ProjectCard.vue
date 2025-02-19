@@ -4,8 +4,8 @@
       <img :src="i.image || '/src/assets/project image/default.png'" class="box-image" />
       <div class="content">
         <h1>{{ i.title }}</h1>
-        <a :href="i.page" target="_blank">Visit Page</a>
-        <a :href="i.code" target="_blank">Show Code</a>
+        <a :href="i.page" target="_blank">{{ $t('VisitPage') }}</a>
+        <a :href="i.code" target="_blank">{{ $t("ViewCode") }}</a>
       </div>
     </div>
   </main>
@@ -92,7 +92,7 @@ main {
 }
 
 .box:hover .box-image {
-  transform: scale(1.1); /* تكبير خفيف للصورة عند الهفر */
+  transform: scale(1.1); 
 }
 
 .content {
@@ -113,12 +113,12 @@ main {
   color: white;
   padding: 15px;
   text-align: center;
-  transform: translateY(20px); /* تحريك بسيط للنصوص */
+  transform: translateY(20px); 
 }
 
 .box:hover .content {
   opacity: 1;
-  transform: translateY(0); /* رجوع النصوص عند الهفر */
+  transform: translateY(0); 
 }
 
 .content a {
@@ -133,7 +133,7 @@ main {
 .content a:hover {
   background-color: rgb(38, 173, 222);
   color: white;
-  transform: scale(1.05); /* تكبير الزر عند الهفر */
+  transform: scale(1.05); 
 }
 
 h1 {

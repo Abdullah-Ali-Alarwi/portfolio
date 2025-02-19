@@ -1,13 +1,13 @@
 <template>
-  <main class="flex flex-col justify-center sm:
+  <main :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'"  :class="{'bg-right': $i18n.locale === 'ar', 'bg-left': $i18n.locale === 'en'}"  class="flex flex-col justify-center sm:
 ">
    
-<div class="title p-20 bg-[rgba(16,16,16,0.6)] lg:bg-transparent " >
-    <h3>Hellow</h3>
+<div  class="title p-20 bg-[rgba(16,16,16,0.6)] lg:bg-transparent " >
+    <h3>{{ $t("Hellow") }}</h3>
  <h4 class="text-2xl
 
-">i'm Abuullah</h4>
- <h1 class="text-[60px] text-cyan-400">Front End Developer</h1>
+">{{ $t("im-abdullah") }}</h4>
+ <h1 class="text-[60px] text-cyan-400 ">{{ $t("FrontEndDeveloper") }}</h1>
 </div>
  </main>
 </template>
@@ -29,6 +29,15 @@ main {
     background-size: contain; 
 
 }
+.bg-right {
+    background-position: right; 
+}
+.bg-right {
+    background-position: left; 
+}
+h1{
+    line-height: 1.2;
+}
 
 @media (max-width: 600px) {
     main {
@@ -37,7 +46,7 @@ main {
     }
 }
 .title{
-    color: white; /* لون النص */
+    color: white; 
 
 font-weight: bold;
 text-shadow: 

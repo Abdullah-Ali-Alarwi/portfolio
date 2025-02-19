@@ -1,0 +1,88 @@
+{
+    "Abuullah": "Abdullah Al-Arwi",
+    "projects": "Projects",
+    "experince": "Experience",
+    "certification": "Certification",
+    "about": "About",
+    "contact": "Contact",
+    "im-abdullah": "I'm Abdullah",
+    "Hellow": "Hello",
+    "FrontEndDeveloper": "Front-End Developer",
+    
+    "commint_one": "Here we start the project translation",
+    "Projects": "Projects",
+    "VisitPage": "Visit Page",
+    "ViewCode": "View Code",
+    
+    "commint_two": "Here we start the about translation",
+    "AboutMe": "About Me",
+    "AboutMeText": "Hello! I’m Abdullah, a passionate and dedicated Front-End Developer, specializing in creating dynamic and responsive web applications. I have a strong foundation in HTML, CSS, JavaScript, and Vue.js, and I excel at building smooth user interfaces that provide interactive and user-friendly experiences. I have a deep understanding of responsive design, ensuring optimal performance of web applications across various devices and screen sizes. Additionally, I am proficient in Tailwind CSS for writing clean and efficient styles with ease, and I use Git and GitHub for version control and project collaboration. I am always excited to learn new technologies and keep up with the latest trends in front-end development. My goal is to turn creative ideas into practical, user-friendly applications that add real value to users. Feel free to explore my portfolio, and let's get in touch!",
+    
+    "experinceInLive": "Life Experience",
+    "ExperinceShow": "I have worked in several jobs, and I am going to showcase some of them in this section.",
+       
+"showVideo": "Show Video voice",
+"hidevieo": "hide Video voice",
+    
+
+
+    "jobs": [
+      {
+        "title": "bank officer   ",
+        "place": "Islamic International Cooperation Bank",
+        "content":"I have been a Bank Officer at Tadhamon International Islamic Bank since 23/02/2020. My responsibilities include executing accounting transactions, opening new accounts, processing withdrawals, deposits, and transfers, issuing cards, cash handling, managing both electronic and manual archives, marketing, and resolving common issues. Additionally, in the absence of the manager, I act as the office manager and perform administrative tasks to ensure smooth workflow." ,
+        "startDate": "23/02/2020",
+        "endDate": "Until now"
+      },
+      {
+        "title": "Trainer ",
+        "place":"Al-Farwi Exchange Company",
+        "content": "I trained employees on global money transfer systems such as MoneyGram, Express Money, and Shift. I also wrote a book explaining the work in a simplified manner and trained employees on the local system, such as Ibda'a Soft.",
+        "startDate": "01/2018",
+        "endDate": "01/2020"
+      },
+      {
+        "title":  "Customer Service Officer and Head of International Transfers Department",
+        "place": "Al-Farwi Exchange Company",
+        "content": "I worked as the Manager of the Global Transfers Department, where I dealt with MoneyGram, Western Union, Express Money, Shift, and all local systems.",
+        "startDate": "01/2018",
+        "endDate": "01/2020"
+      },
+      {
+        "title":"English Language Teacher",
+        "place": "Al-Fateh School",
+        "content": "English Language Teacher at Al-Fateh School in Al-Bayda from 09/03/2018 to 21/03/2018, and from 01/02/2020 to present.",
+        "startDate": "09/03/2018",
+        "endDate": "21/03/2018"
+      },
+      {
+        "title": "Front-End Developer",
+        "place": "Freelance",
+        "content": "An ambitious Front-End Developer with knowledge of building responsive websites using Vue.js and Vuex for state management. Proficient in using Tailwind CSS for designing user-friendly interfaces and GitHub for version control. Gaining experience in testing with Jest to ensure code reliability. Excited to apply and develop my skills in a professional development environment.",
+        "startDate": "01/01/2024",
+         "endDate": "Until now"
+      },
+      {
+        "title": "Voice-over Artist, Writer, and Poet",
+        "place" :"Freelance",
+       "content": "I am a voice-over artist with the ability to deliver clear and engaging voice narration for various projects such as commercials, programs, and educational content. I can adjust my tone and performance style according to the required context, whether formal or informal, to effectively convey messages. Additionally, I am skilled in writing poetry and stories in Arabic.",
+        "startDate": "2020",
+       "endDate": "Until now"
+      }
+    
+    ]
+    ,
+
+    "MyCertifications": "My Certifications",
+    "footer":"Thank you so much for visiting my page and getting to know my portfolio! I truly appreciate your time and interest in exploring my work. If you have any questions or would like to discuss potential collaboration opportunities, feel free to reach out. I look forward to working with you in the future. Thanks again, and I wish you a day full of creativity and success!",
+
+  "ChatwithMeOnWhatsApp": "Chat with Me On WhatsApp",
+  "ChatwithMeOnLinkedIn": "Chat with Me On LinkedIn",
+  "CallMeOnMyNumber ": "Call Me On My Number ",
+  "from": "From",
+    "to": "To"
+
+
+
+  }
+  

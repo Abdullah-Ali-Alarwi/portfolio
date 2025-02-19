@@ -1,5 +1,6 @@
 <template>
- <span class="text-[30px] text-cyan-200 "> Projects
+ 
+<span class="text-[30px] text-cyan-200"> {{ $t('Projects') }}
 </span>
   <ProjectCardVue />
 </template>
@@ -21,10 +22,6 @@ import ProjectCardVue from "../component/ProjectCard.vue";
   margin: 3em;
  }
 
- span{
-  
-  font-size: 2em;
-  margin: 1em;
- }
+ 
 </style> 
 

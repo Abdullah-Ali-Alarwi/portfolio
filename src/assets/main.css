@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
+
+
+* {
+    font-family: 'Droid Arabic Kufi', sans-serif;
+line-height: 2.6;
+  }
 body{
     background-color: rgb(12,12,12) !important;
     color: rgb(220, 202, 202);

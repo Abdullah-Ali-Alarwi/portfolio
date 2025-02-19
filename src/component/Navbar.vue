@@ -1,9 +1,8 @@
 <template>
-  <main>
+  <main :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'">
     <nav class="flex justify-between items-center bg-[rgb(12,12,12)] text-amber-50 p-4 relative">
-      <h1 class="text-xl font-bold text-cyan-500 title">Abuullah Al-Arwi</h1>
+      <h1 class="text-xl font-bold text-cyan-500 title">{{$t('Abuullah' )}}</h1>
   
-      <!-- زر القائمة للشاشات الصغيرة -->
       <button @click="toggleMenu" class="sm:hidden text-2xl transition-transform duration-500 ease-in-out">
         {{ isMenuOpen ? '✖' : '☰' }}
       </button>
@@ -13,11 +12,16 @@
           v-show="isMenuOpen || windowWidth >= 640"
           class="flex flex-col sm:flex-row gap-4 items-center bg-[rgb(12,12,12)] sm:bg-transparent p-4 sm:p-0 absolute sm:static left-0 right-0 top-14 sm:top-auto"
         >
-          <li><a href="#" @click.prevent="scrollToSection('Protofilo')" class="hover:text-cyan-400 text-[22px]">projects</a></li>
-          <li><a href="#" @click.prevent="scrollToSection('ExperinceInLive')" class="hover:text-cyan-400 text-[22px]">Experience</a></li>
-          <li><a href="#" @click.prevent="scrollToSection('certificationspage')" class="hover:text-cyan-400 text-[22px]">Certifications</a></li>
-          <li><a href="#" @click.prevent="scrollToSection('About')" class="hover:text-cyan-400 text-[22px]">About</a></li>
-          <li><a href="#" @click.prevent="scrollToSection('contact')" class="hover:text-cyan-400 text-[22px]">Contact</a></li>
+          <li><a href="#" @click.prevent="scrollToSection('Protofilo')" class="hover:text-cyan-400 text-[22px]">{{$t('projects' )}} </a></li>
+          <li><a href="#" @click.prevent="scrollToSection('ExperinceInLive')" class="hover:text-cyan-400 text-[22px]">{{$t("experince")}}</a></li>
+          <li><a href="#" @click.prevent="scrollToSection('certificationspage')" class="hover:text-cyan-400 text-[22px]">{{ $t("certification") }}</a></li>
+          <li><a href="#" @click.prevent="scrollToSection('About')" class="hover:text-cyan-400 text-[22px]">{{ $t("about") }}</a></li>
+          <li><a href="#" @click.prevent="scrollToSection('contact')" class="hover:text-cyan-400 text-[22px]">{{ $t("contact") }}</a></li>
+          <select v-model="$i18n.locale" class="text-[22px]" @change="saveLanguage">
+            <option v-for="locale in $i18n.availableLocales" :key="locale" :value="locale">
+              {{ locale === 'ar' ? 'العربية' : 'English' }}
+            </option>
+          </select>
         </ul>
       </transition>
     </nav>
@@ -32,6 +36,7 @@ export default {
       windowWidth: window.innerWidth,
     };
   },
+
   methods: {
     toggleMenu() {
       this.isMenuOpen = !this.isMenuOpen;
@@ -48,11 +53,21 @@ export default {
         section.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     },
+    saveLanguage() {
+      localStorage.setItem('language', this.$i18n.locale);
+    },
   },
+
   mounted() {
-    this.handleResize(); // تأكد من أنه عند التحميل يتم تحديث قيمة windowWidth
+    const storedLanguage = localStorage.getItem('language');
+    if (storedLanguage) {
+      this.$i18n.locale = storedLanguage;
+    }
+
+    this.handleResize(); 
     window.addEventListener("resize", this.handleResize);
   },
+
   beforeUnmount() {
     window.removeEventListener("resize", this.handleResize);
   },

@@ -8,8 +8,8 @@
         </div>
       </a>
     
-      <h1>Chat with Me On WhatsApp</h1>
-      <p>+967 733 178 756</p>
+      <h1>{{ $t('ChatwithMeOnWhatsApp') }}</h1>
+      <p :dir="$i18n.locale === 'ar' ? 'ltr' : 'ltr'"  >+967 733 178 756</p>
     </div>
     <div class="box text-center">
       <a href="https://www.linkedin.com/in/abdullah-alarwi-4b92b634a/">
@@ -18,15 +18,15 @@
           <img class="w-[100%] h-[100%]" src="/src/assets/icon/social (1).png" alt="">
         </div>
       </a>
-      <h1>Chat with Me On LinkedIn</h1>
+      <h1>{{ $t("ChatwithMeOnLinkedIn") }}</h1>
       <p>linkedin.com/in/abdullah-alarwi-4b92b634a</p>
     </div>
     <div class="box text-center">
       <div class="icon bg-amber-50 rounded-full flex w-[70px] h-[70px] p-3">
-       <a href="tel:+967733178756"> <img class="w-[100%] h-[100%]" src="/src/assets/icon/phone-call.png" alt=""></a>
+       <a   href="tel:+967733178756"> <img class="w-[100%] h-[100%]" src="/src/assets/icon/phone-call.png" alt=""></a>
       </div>
-      <h1>Call Me On My Number</h1>
-      <p><a href="tel:+967733178756"> +967 733 178 756 </a></p>
+      <h1>{{ $t("CallMeOnMyNumber ") }}</h1>
+      <p :dir="$i18n.locale === 'ar' ? 'ltr' : 'ltr'"  ><a href="tel:+967733178756"> +967 733 178 756 </a></p>
     </div>
   </main>
 </template>
@@ -40,7 +40,7 @@
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  background-color: rgb(4, 204, 234); /* Blue background */
+  background-color: rgb(4, 204, 234); 
   color: white;
   box-shadow: 0 0 20px rgba(4, 204, 234, 0.8), 0 0 30px rgba(30, 58, 138, 0.6), 0 0 40px rgba(30, 58, 138, 0.4);
 }
@@ -51,7 +51,7 @@ h1 {
 
 .box .icon:hover {
   cursor: pointer;
-  color: rgb(4, 204, 234); /* Blue background */
+  color: rgb(4, 204, 234); 
   box-shadow: 0 0 20px rgba(4, 204, 234, 0.8), 0 0 30px rgba(30, 58, 138, 0.6), 0 0 40px rgba(30, 58, 138, 0.4);
 }
 

@@ -1,6 +1,6 @@
 <template>
   <main>
-    <span class="text-[30px] text-cyan-200"> My Certifications
+    <span class="text-[30px] text-cyan-200"> {{ $t('MyCertifications') }} 
     </span>
     <Cercom/>
   </main>

@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-[2%]">
+  <div class="mx-[2%]" :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'">
     <Navbar />
     <Header />  
     <Skills />
@@ -21,8 +21,7 @@
       ↑
     </button>
     <div class="footer">
-      <p>"Thank you so much for visiting my page and getting to know my portfolio!
-        I truly appreciate your time and interest in exploring my work. If you have any questions or would like to discuss potential collaboration opportunities, feel free to reach out. I look forward to working with you in the future. Thanks again, and I wish you a day full of creativity and success!"</p>
+      <p>{{ $t("footer") }}</p>
     </div>
    
   </div>
