@@ -5,7 +5,8 @@
  <h1>HTML</h1>
 <h1>CSS</h1>
 <h1>JAVASCRIPT</h1>
-<h1>VUEJS</h1>
+<h1>REACT </h1>
+<h1>VUE </h1>
 <h1>TAILWIND CSS</h1>
 <h1>GIT</h1>
 <h1>GITHUB</h1>

@@ -18,6 +18,8 @@ import ToDoApp from "../assets/project image/To Do App with Vue.png";
 import Market from "../assets/project image/market.png";
 import TemplateTow from "../assets/project image/templateTow.png";
 import TemplateThree from "../assets/project image/template three.png";
+import alarwishop from "../assets/project image/alarwohsop.png";
+
 
 let WebPAge = [
   {
@@ -54,6 +56,13 @@ let WebPAge = [
     image:TemplateThree,
     page: "https://abdullah-ali-alarwi.github.io/template-3/",
     code: "https://github.com/Abdullah-Ali-Alarwi/template-3",
+  },
+  {
+    id: 5,
+    title: "Al-arwi shop",
+    image:alarwishop,
+    page: "https://alarwishop.netlify.app/",
+    code: "https://github.com/Abdullah-Ali-Alarwi/AlarwiShop",
   },
 ];
 </script>
