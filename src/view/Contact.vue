@@ -40,9 +40,9 @@
   padding: 20px;
   margin: 20px;
   border-radius: 10px;
-  background-color: rgb(4, 204, 234); 
+  background-color: rgb(33, 36, 33); 
   color: white;
-  box-shadow: 0 0 20px rgba(4, 204, 234, 0.8), 0 0 30px rgba(30, 58, 138, 0.6), 0 0 40px rgba(30, 58, 138, 0.4);
+  box-shadow: 0 0 20px rgba(4, 203, 234, 0.512), 0 0 30px rgba(30, 59, 138, 0.326), 0 0 40px rgba(30, 59, 138, 0.189);
 }
 
 h1 {
@@ -52,7 +52,7 @@ h1 {
 .box .icon:hover {
   cursor: pointer;
   color: rgb(4, 204, 234); 
-  box-shadow: 0 0 20px rgba(4, 204, 234, 0.8), 0 0 30px rgba(30, 58, 138, 0.6), 0 0 40px rgba(30, 58, 138, 0.4);
+  box-shadow: 0 0 20px rgba(4, 203, 234, 0.488), 0 0 30px rgba(30, 59, 138, 0.296), 0 0 40px rgba(30, 58, 138, 0.4);
 }
 
 .icon {
